@@ -9,10 +9,10 @@ spring:
     gateway:
       routes:
       - id: employee-service
-        uri: lb://EMPLOYEE-SERVICE
+        uri: http://localhost:7030/
         predicates:
         - Path=/employee/**
       - id: department-service
-        uri: lb://DEPARTMENT-SERVICE
+        uri: http://localhost:7040/
         predicates:
         - Path=/department/**
