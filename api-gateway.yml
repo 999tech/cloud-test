@@ -4,15 +4,15 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:7020/eureka/
-spring:
-  cloud:
-    gateway:
-      routes:
-      - id: employee-service
-        uri: http://localhost:7030/
-        predicates:
-        - Path=/employee/**
-      - id: department-service
-        uri: http://localhost:7040/
-        predicates:
-        - Path=/department/**
+# spring:
+#   cloud:
+#     gateway:
+#       routes:
+#       - id: employee-service
+#         uri: http://localhost:7030/
+#         predicates:
+#         - Path=/employee/**
+#       - id: department-service
+#         uri: http://localhost:7040/
+#         predicates:
+#         - Path=/department/**
